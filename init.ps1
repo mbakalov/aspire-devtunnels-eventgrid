@@ -18,6 +18,7 @@ function New-Devtunnel
         Write-Output "Creating aspire-tunnel"
         devtunnel create aspire-tunnel --allow-anonymous --labels aspire-tunnel
 
+        # WARNING - this port needs to match what the SampleWebApi uses
         Write-Output "Creating port 5099 for aspire-tunnel"
         devtunnel port create aspire-tunnel -p 5099 --protocol http
 

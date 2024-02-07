@@ -4,8 +4,8 @@ var builder = DistributedApplication.CreateBuilder(args);
 
 var acs = builder.AddAzureCommunicationServices("ACS");
 
-// TODO: Use devtunnel sdk to create the tunnel here?
-// Instead of a separate .ps1 script
+// TODO: Use devtunnel sdk to create the tunnel here? Instead of a separate .ps1 script
+// How to know at this point what port the samplewebapi will be bound to locally?
 const ushort port = 5099;
 var tunnelPort = builder.AddDevTunnel("aspire-tunnel").AddPort("samplewebapi-port", port);
 
