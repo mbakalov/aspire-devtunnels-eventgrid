@@ -5,6 +5,9 @@ param resourceGroupName string
 
 param location string = 'eastus2'
 
+var nameSuffix = toLower(uniqueString(subscription().id, resourceGroupName))
+var communictionServiceName = 'acs-${nameSuffix}'
+
 resource resourceGroup 'Microsoft.Resources/resourceGroups@2021-04-01' = {
   name: resourceGroupName
   location: location
@@ -14,7 +17,7 @@ module communicationService 'communicationservices.bicep' = {
   name: 'communicationService'
   scope: resourceGroup
   params: {
-    communicationServiceName: 'acs-aspire-devtunnels-test'
+    communicationServiceName: communictionServiceName
   }
 }
 

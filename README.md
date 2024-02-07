@@ -33,7 +33,7 @@ with [Dev tunnels](https://learn.microsoft.com/azure/developer/dev-tunnels/).
       to deploy resources to.
 
     * It will create a resource group called `rg-aspire-devtunnels-test` and the
-      Communication resource called `acs-aspire-devtunnels-test`.
+      Communication resource called `acs-<randomname>`.
 
     * Finally it will initalize environment variables required by the app:
 
