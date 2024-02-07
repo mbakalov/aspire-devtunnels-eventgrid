@@ -5,9 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleWebApi", "src\SampleWebApi\SampleWebApi.csproj", "{9A0B0BE8-D225-40A5-BC05-2453B8EC60A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireTunnels.AppHost", "src\AspireTunnels.AppHost\AspireTunnels.AppHost.csproj", "{8AF7A666-62BB-4D24-8945-C27D72D060EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireTunnels.AppHost", "src\AspireTunnels.AppHost\AspireTunnels.AppHost.csproj", "{8AF7A666-62BB-4D24-8945-C27D72D060EB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireTunnels.ServiceDefaults", "src\AspireTunnels.ServiceDefaults\AspireTunnels.ServiceDefaults.csproj", "{4A50D13C-18CF-416D-AF32-361DD9B570E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireExtensions", "src\AspireExtensions\AspireExtensions.csproj", "{3CC689E5-2256-4B7C-9BCC-24C3D8F5BD3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +29,15 @@ Global
 		{4A50D13C-18CF-416D-AF32-361DD9B570E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A50D13C-18CF-416D-AF32-361DD9B570E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A50D13C-18CF-416D-AF32-361DD9B570E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CC689E5-2256-4B7C-9BCC-24C3D8F5BD3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CC689E5-2256-4B7C-9BCC-24C3D8F5BD3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CC689E5-2256-4B7C-9BCC-24C3D8F5BD3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CC689E5-2256-4B7C-9BCC-24C3D8F5BD3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E1F84AE-494C-4F9D-BB2A-8DA208850B3C}
 	EndGlobalSection
 EndGlobal

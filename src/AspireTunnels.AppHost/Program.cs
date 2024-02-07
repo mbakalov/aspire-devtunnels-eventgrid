@@ -1,5 +1,10 @@
+using AspireExtensions;
+
 var builder = DistributedApplication.CreateBuilder(args);
 
-builder.AddProject<Projects.SampleWebApi>("samplewebapi");
+var acs = builder.AddAzureCommunicationServices("ACS");
+
+builder.AddProject<Projects.SampleWebApi>("samplewebapi")
+    .WithReference(acs);
 
 builder.Build().Run();
